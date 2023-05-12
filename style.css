@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    cursor: url('https://fav.farm/🪶') 52 42, pointer;
+  }
+
+html{
+    padding: 10px 10px;
+    cursor: url('https://fav.farm/🪶') 0 -42, pointer;
+  }
+
+  body {
+    /* background-color: #f5e6d8; */
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+
+    background: linear-gradient(to bottom, #ffd555, #fbcb3b, #fbc218, #4e3c06);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+  }
+
+  .scroll {
+    background-color: #f5e6d8;
+    border: 1px solid #a67c00;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #a67c00;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 10px;
+    position: relative;
+  }
+
+  .scroll:before {
+    background-color: #a67c00;
+    content: "";
+    height: 100%;
+    left: -10px;
+    position: absolute;
+    top: 0;
+    width: 10px;
+    z-index: -1;
+  }
+
+  .scroll:after {
+    background-color: #a67c00;
+    content: "";
+    height: 100%;
+    position: absolute;
+    right: -10px;
+    top: 0;
+    width: 10px;
+    z-index: -1;
+  }
+
+  .scroll h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+    text-shadow: 2px 2px #a67c00;
+  }
+
+  .scroll p {
+    margin-bottom: 20px;
+    text-indent: 50px;
+  }
+
+  .scroll img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  @font-face {
+    font-family: "TroviDialect";
+    src: url("TroviDialect-Regular.ttf");
+  }
+  
+p {    
+    font-family: "TroviDialect", monospace;
+    transition: font-family 10s ease-in-out;
+    transition-delay: 2s;
+    padding: 20px;
+  }
+
+  h1{
+    font-family: "TroviDialect", monospace;
+    transition: font-family 10s ease-in-out;
+    transition-delay: 2s;
+
+  }
+  
+h1:hover, p:hover{
+    font-family: monospace;
+    transition: font-family 10s ease-in-out;
+    transition-delay: 0s;
+  }
+
+@media (width<376px) {
+
+    p{    
+        font-family: "TroviDialect", monospace;
+        transition: font-family 10s ease-in-out;
+        transition-delay: 10s;
+        padding: 20px;
+        text-align: justify;
+      }
+    
+      h1{
+        font-family: "TroviDialect", monospace;
+        transition: font-family 10s ease-in-out;
+        transition-delay: 10s;
+    
+      }
+
+    h1:active, p:active {
+        font-family: monospace;
+        transition: font-family 10s ease-in-out;
+        transition-delay: 100s;
+      }
+
+    
+}
